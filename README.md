@@ -30,4 +30,4 @@ Optional project hooks live in `.cursor/hooks.json` (see [Hooks](https://cursor.
 
 ## Placeholder git path
 
-Tracked template: `config/git-path.placeholder` — replace the placeholder URL with your default application repo (or copy to `config/git-path`, which is gitignored, and keep the placeholder file as documentation).
+Tracked template: `git/git-path.placeholder` — replace the placeholder URL with your default application repo (or copy to `git/git-path`, which is gitignored, and keep the placeholder file as documentation).
