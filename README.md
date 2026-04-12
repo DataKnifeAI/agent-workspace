@@ -27,3 +27,7 @@ git add .cursor/skills/agent-skills && git commit -m "Bump agent-skills submodul
 ## Hooks
 
 Optional project hooks live in `.cursor/hooks.json` (see [Hooks](https://cursor.com/docs/hooks)).
+
+## Placeholder git path
+
+Tracked template: `config/git-path.placeholder` — replace the placeholder URL with your default application repo (or copy to `config/git-path`, which is gitignored, and keep the placeholder file as documentation).

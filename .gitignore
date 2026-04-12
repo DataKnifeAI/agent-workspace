@@ -3,6 +3,9 @@
 .env.*
 !.env.example
 
+# Optional override for `config/git-path.placeholder` (copy or replace)
+config/git-path
+
 # OS / editor
 .DS_Store
 *.swp

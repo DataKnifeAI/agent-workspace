@@ -1,0 +1,7 @@
+# Copy to `config/git-path` (gitignored) or replace this file after fork/clone.
+# Tools or docs can point agents at the repository URL you use for application work.
+#
+# Example:
+# https://github.com/DataKnifeAI/your-application.git
+
+https://github.com/DataKnifeAI/PLACEHOLDER.git
