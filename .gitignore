@@ -1,0 +1,9 @@
+# Local env (use Cursor Cloud Agent secrets for sensitive values)
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+*.swp
+*~
