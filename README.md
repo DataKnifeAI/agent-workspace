@@ -34,4 +34,4 @@ Tracked template: `git/git-path.placeholder` — replace the placeholder URL wit
 
 ## Agent repos on Coder
 
-On Coder, use **`/home/coder/agent-workspace/git/`** for application clones and **`git worktree`** checkouts so multiple agents can run parallel tasks without conflicting worktrees. Cursor rules in `.cursor/rules/coder-workspace.mdc` describe this for agents.
+On Coder, clone **other projects** under **`/home/coder/agent-workspace/git/<project>/`** (one folder per repo) so you can open **multiple repositories** in parallel—separate Cursor windows or a **multi-root** `.code-workspace`—without mixing them into this template. That is separate from Cursor’s **`/worktree`** isolation (see [Worktrees](https://cursor.com/docs/configuration/worktrees)), which uses `~/.cursor/worktrees` by default. Details for agents: `.cursor/rules/coder-workspace.mdc`.
