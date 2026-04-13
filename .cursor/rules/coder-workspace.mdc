@@ -26,6 +26,18 @@ command -v coder >/dev/null && coder version 2>/dev/null | head -1
 
 If the workspace is clearly local-only and no `CODER_*` vars exist, say so once instead of repeating every message.
 
+## Agent repos and git worktrees
+
+On **Coder** workspaces, this template is expected to live at **`/home/coder/agent-workspace`** (i.e. `~/agent-workspace` for the `coder` user). Store **all** extra application repos, task-specific clones, and **`git worktree`** checkouts under:
+
+**`/home/coder/agent-workspace/git/`**
+
+Use a **separate subdirectory per agent task or worktree** (for example `git/<repo-name>-<task-id>`) so parallel agents do not share one working tree. Prefer `git worktree add` from a primary clone in that tree when you need multiple branches side by side.
+
+Keep the template checkout at `/home/coder/agent-workspace` for skills (`.cursor/skills/`), hooks, and shared rules—do not turn that root into unrelated project worktrees.
+
+**Locally** (not on Coder), mirror the same layout: `<clone-of-this-repo>/git/` for task repos and worktrees.
+
 ## References
 
 - Coder CLI skill: `.cursor/skills/agent-skills/skills/coder-cli/SKILL.md`

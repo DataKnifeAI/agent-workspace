@@ -31,3 +31,7 @@ Optional project hooks live in `.cursor/hooks.json` (see [Hooks](https://cursor.
 ## Placeholder git path
 
 Tracked template: `git/git-path.placeholder` — replace the placeholder URL with your default application repo (or copy to `git/git-path`, which is gitignored, and keep the placeholder file as documentation).
+
+## Agent repos on Coder
+
+On Coder, use **`/home/coder/agent-workspace/git/`** for application clones and **`git worktree`** checkouts so multiple agents can run parallel tasks without conflicting worktrees. Cursor rules in `.cursor/rules/coder-workspace.mdc` describe this for agents.
