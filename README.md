@@ -1,5 +1,8 @@
 # agent-workspace
 
+![Agent workspace for Cursor Cloud Agents](docs/assets/agent-workspace-hero.jpg)
+
+
 Starting **git workspace** for [Cursor Cloud Agents](https://cursor.com/docs/cloud-agent): clone this repository (or fork it) as the base repo cloud agents use for branches, hooks, and shared tooling.
 
 ## Cloud agents
