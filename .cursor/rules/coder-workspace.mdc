@@ -46,3 +46,4 @@ Keep **`/home/coder/agent-workspace`** itself for this template only: skills (`.
 
 - Coder CLI skill: `.cursor/skills/agent-skills/skills/coder-cli/SKILL.md`
 - Coder docs: [Workspaces](https://coder.com/docs/workspaces)
+- Org baselines: [agent-skills](https://github.com/DataKnifeAI/agent-skills), [DataKnifeAI/.github docs](https://github.com/DataKnifeAI/.github)

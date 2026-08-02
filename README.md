@@ -2,8 +2,9 @@
 
 ![Agent workspace for Cursor Cloud Agents](docs/assets/agent-workspace-hero.jpg)
 
-
 Starting **git workspace** for [Cursor Cloud Agents](https://cursor.com/docs/cloud-agent): clone this repository (or fork it) as the base repo cloud agents use for branches, hooks, and shared tooling.
+
+Org context: [DataKnifeAI](https://github.com/DataKnifeAI) · [branding](https://github.com/DataKnifeAI/.github/blob/main/docs/ORG_BRANDING.md) · [project setup](https://github.com/DataKnifeAI/.github/pull/5) · [naming](https://github.com/DataKnifeAI/.github/pull/3) · [repo settings](https://github.com/DataKnifeAI/.github/pull/4)
 
 ## Cloud agents
 
@@ -13,6 +14,8 @@ Starting **git workspace** for [Cursor Cloud Agents](https://cursor.com/docs/clo
 ## Shared skills (submodule)
 
 This repo includes the [DataKnifeAI/agent-skills](https://github.com/DataKnifeAI/agent-skills) repository as a submodule at `.cursor/skills/agent-skills/`.
+
+Skills resolve at `.cursor/skills/agent-skills/skills/<name>/SKILL.md`. Cursor discovers `SKILL.md` recursively under `.cursor/skills/` (and `.agents/skills/`), so the nested submodule layout works without flattening. For a flat `.cursor/skills/<name>/` layout in other repos, use the installer in `agent-skills` (`make install` / `scripts/install-skills.sh`).
 
 After clone, initialize submodules:
 
